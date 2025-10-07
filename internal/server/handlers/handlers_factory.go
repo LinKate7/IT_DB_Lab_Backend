@@ -1,0 +1,13 @@
+package handlers
+
+import "github.com/LinKate7/it_db_lab1/internal/server/controllers"
+
+type HandlersFactory struct {
+	dbc *controllers.DatabaseController
+}
+
+func NewHandlersFactory(dbc *controllers.DatabaseController) *HandlersFactory {
+	return &HandlersFactory{
+		dbc: dbc,
+	}
+}
